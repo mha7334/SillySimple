@@ -1,10 +1,34 @@
 <html>
     <head>
         <title>SillySimple</title>
+        <script src="jquery-1.10.2.min.js">
+        </script>
+        
+        <script>
+           $(document).ready(function(){
+                
+              $("#btnShowText").click(function(){
+                $("div").html("You clicked!");
+               
+        });
+              
+                $("#btnClear").click(function(){
+                $("div").html("");
+               
+        });
+                
+        }); 
+        </script>
     </head>
     
     <body>
         
-        Thi sis just test.nkldjfklkxcjk
+        <button id="btnShowText">
+            Show Text
+        </button>
+        <button id="btnClear">
+            Clear
+        </button>
+        <div id="res" />   
     </body>
 </html>
